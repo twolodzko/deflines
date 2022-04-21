@@ -31,3 +31,7 @@ stylecheck:
 .PHONY: typecheck
 typecheck:
 	mypy deflines/
+
+.PHONY: clean
+clean:
+	rm -rf dist __pycache__ .pytest_cache deflines.egg-info

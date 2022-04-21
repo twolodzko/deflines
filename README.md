@@ -3,9 +3,9 @@
 ![Dolphins](img/dolphins.jpg)
 
 **deflines**, pronounced like *dolphins*, is a simple command-line tool that counts the number of lines per each
-function and method as a rough estimate of code complexity. It is build on top of the [Python's ast module](https://sadh.life/post/ast/).
+function and method as a rough estimate of code complexity. It is build on top of the [Python's ast module].
 
-## Example
+## Examples
 
 Create report for this repository, sort the results by the number of lines per function:
 
@@ -25,6 +25,8 @@ $ deflines | sort -k1
   20  2 deflines/test_deflines.py:51:0 test_Analyzer
   29  2 deflines/test_deflines.py:120:0 test_Analyzer_cc
 ```
+
+The first column shows the number of lines and the second column [cyclomatic complexity].
 
 Look only for the python files with "test" in the path:
 
@@ -49,3 +51,7 @@ make install
 ```
 
 *Image source: <https://en.wikipedia.org/wiki/Persian_Gulf#/media/File:Dolphins_Oman.JPG>*
+
+
+ [cyclomatic complexity]: https://radon.readthedocs.io/en/latest/intro.html
+ [Python's ast module]: https://sadh.life/post/ast/

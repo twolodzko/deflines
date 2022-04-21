@@ -6,7 +6,7 @@ from deflines import ModuleAnalyzer
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        usage="%(prog)s [OPTION] [PATTERN]",
+        usage="%(prog)s [pattern]",
         description="Calculate number of lines and cyclomatic complexity for each function and method in the module.",
     )
     parser.add_argument(

@@ -14,7 +14,7 @@ exclude = '''
   | \.venv
   | build
   | dist
-  | deflines.egg-info
+  | signatures.egg-info
 )/
 '''
 

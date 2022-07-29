@@ -1,5 +1,5 @@
 
-dist: deflines
+dist: signatures
 	pip install build
 	python -m build
 
@@ -16,7 +16,7 @@ test:
 
 .PHONY: smoketest
 smoketest:
-	PYTHONPATH=. python deflines/cli.py
+	PYTHONPATH=. python signatures/main.py
 
 .PHONY: stylefix
 stylefix:
@@ -30,8 +30,8 @@ stylecheck:
 
 .PHONY: typecheck
 typecheck:
-	mypy deflines/
+	mypy signatures/
 
 .PHONY: clean
 clean:
-	rm -rf dist __pycache__ .pytest_cache deflines.egg-info
+	rm -rf dist __pycache__ .pytest_cache signatures.egg-info
